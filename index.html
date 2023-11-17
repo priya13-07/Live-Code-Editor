@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Live Code Editor</title>
+
+    <!-- CodeMirror Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/theme/dracula.min.css">
+
+    <!-- CodeMirror Scripts -->
+    <script src="https://codemirror.net/addon/fold/xml-fold.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/mode/css/css.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/mode/xml/xml.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/mode/javascript/javascript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.58.3/addon/edit/closetag.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/addon/edit/closebrackets.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.62.0/addon/edit/matchbrackets.js"></script>
+
+    <!-- Your Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="code-editor">
+        <div class="container">
+            <div class="tabs">
+                <div class="tab" id="reset-btn">Reset</div>
+                <div class="tab" id="download-btn">Download</div>
+                <div class="tab" id="fullscreen-btn">Fullscreen</div>
+            </div>
+            <div class="code">
+                <div class="html-code active">
+                    <h1><img src="images/html.png" alt="">HTML</h1>
+                    <textarea></textarea>
+                </div>
+                <div class="css-code">
+                    <h1><img src="images/CSS.png" alt="">CSS</h1>
+                    <textarea></textarea>
+                </div>
+                <div class="js-code">
+                    <h1><img src="images/js.png" alt="">JS</h1>
+                    <textarea spellcheck="false"></textarea>
+                </div>
+            </div>
+        </div>
+        <iframe id="result"></iframe>
+    </div>
+
+    <!-- Your Custom Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
